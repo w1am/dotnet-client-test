@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asynchronous", "Asynchronous\Asynchronous.csproj", "{E7A7E026-AEDE-4BA7-B0A1-AAFEE1EC6D6E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "client", "client", "{A05FA29F-F358-48E3-BF8D-1313DAE282A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventStore.Client", "..\..\clients\EventStore-Client-Dotnet\src\EventStore.Client\EventStore.Client.csproj", "{06730682-77DB-4DDD-85A5-04E695E524F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventStore.Client.Streams", "..\..\clients\EventStore-Client-Dotnet\src\EventStore.Client.Streams\EventStore.Client.Streams.csproj", "{97ABFD26-A968-4459-8065-11616FC75B8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,17 @@ Global
 		{E7A7E026-AEDE-4BA7-B0A1-AAFEE1EC6D6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7A7E026-AEDE-4BA7-B0A1-AAFEE1EC6D6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7A7E026-AEDE-4BA7-B0A1-AAFEE1EC6D6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06730682-77DB-4DDD-85A5-04E695E524F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06730682-77DB-4DDD-85A5-04E695E524F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06730682-77DB-4DDD-85A5-04E695E524F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06730682-77DB-4DDD-85A5-04E695E524F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97ABFD26-A968-4459-8065-11616FC75B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97ABFD26-A968-4459-8065-11616FC75B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97ABFD26-A968-4459-8065-11616FC75B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97ABFD26-A968-4459-8065-11616FC75B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{06730682-77DB-4DDD-85A5-04E695E524F8} = {A05FA29F-F358-48E3-BF8D-1313DAE282A2}
+		{97ABFD26-A968-4459-8065-11616FC75B8E} = {A05FA29F-F358-48E3-BF8D-1313DAE282A2}
 	EndGlobalSection
 EndGlobal
