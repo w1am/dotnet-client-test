@@ -16,16 +16,21 @@ namespace Asynchronous
             var streamName = "example-stream";
             var eventType = "sample-event";
 
-            var eventData = new EventData(
-                Uuid.NewUuid(),
-                eventType,
-                Encoding.UTF8.GetBytes(JsonSerializer.Serialize(new { Message = "Hello, EventStore!" }))
-            );
-
             var response = await client.AppendToStreamAsync(
                 streamName,
                 StreamState.Any,
-                [eventData]
+                [
+                    new EventData(
+                        Uuid.NewUuid(),
+                        eventType,
+                        Encoding.UTF8.GetBytes(JsonSerializer.Serialize(new { Message = "Hello, EventStore!" }))
+                    ),
+                    new EventData(
+                        Uuid.NewUuid(),
+                        eventType,
+                        Encoding.UTF8.GetBytes(JsonSerializer.Serialize(new { Message = "Hello, EventStore!" }))
+                    )
+                ]
             );
             Console.WriteLine($"Event appended successfully. {response.LogPosition}");
 
