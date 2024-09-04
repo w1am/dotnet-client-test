@@ -8,8 +8,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\..\clients\EventStore-Client-Dotnet\src\EventStore.Client.Streams\EventStore.Client.Streams.csproj" />
-      <ProjectReference Include="..\..\..\clients\EventStore-Client-Dotnet\src\EventStore.Client\EventStore.Client.csproj" />
+        <!--      <ProjectReference Include="..\..\..\clients\EventStore-Client-Dotnet\src\EventStore.Client.Streams\EventStore.Client.Streams.csproj" />-->
+        <!--      <ProjectReference Include="..\..\..\clients\EventStore-Client-Dotnet\src\EventStore.Client\EventStore.Client.csproj" />-->
+
+        <PackageReference Include="EventStore.Client.Grpc.Streams" Version="23.3.5"/>
     </ItemGroup>
 
 </Project>
