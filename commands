@@ -1,0 +1,7 @@
+.\EventStore.ClusterNode.exe `
+    --advertise-http-port-to-client-as 2113 `
+    --certificate-file ./certs/node1/node.crt `
+    --certificate-private-key-file ./certs/node1/node.key `
+    --trusted-root-certificates-path ./certs/ca `
+    --http-port 2113 `
+    --log /var/log/eventstore
